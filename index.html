@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="icon.png" type="image/png">
+  <title>Happy Birthday!</title>
+</head>
+<body>
+  <div class="container">
+    <div class="blink">
+      <marquee behavior="scroll" direction="left">Happy Birthday To P'Film! (ลองกดที่รูปดูครับ)</marquee>
+    </div>
+    <div class="image-container">
+      <img id="cake" src="cake.png" alt="Birthday Cake" class="animate" onclick="showFireworks()">
+    </div>
+    <div class="message hidden" id="birthdayMessage">
+      <p>สุขสันต์วันเกิดคร้าบพิ้สาว ขอให้คุณมีความสุขตลอดปีตลอดไป เงินทองไหลมาเทมานะครับบบ รักพื้นะค้าบบบ</p>
+      <svg class="heart" viewBox="0 0 32 29.6">
+        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+        c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+      </svg> 
+    </div>
+  </div>
+  <canvas id="fireworksCanvas"></canvas>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #aee3e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .blink {
+    font-size: 24px;
+    color: #f06292;
+    animation: blink 1s linear infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .image-container {
+    margin-top: 20px;
+    position: relative; /* เพิ่มบรรทัดนี้เพื่อกำหนดตำแหน่งสำหรับประกอบภาพ */
+  }
+  
+  #cake {
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #birthdayMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f06292;
+    position: absolute; /* เพิ่มบรรทัดนี้เพื่อกำหนดตำแหน่งสำหรับข้อความ */
+    bottom: 0; /* เพิ่มบรรทัดนี้เพื่อจัดให้ข้อความอยู่ด้านล่างสุด */
+    left: 50%; /* เพิ่มบรรทัดนี้เพื่อจัดให้ข้อความอยู่ตรงกลางแนวนอน */
+    transform: translateX(-50%); /* เพิ่มบรรทัดนี้เพื่อกำหนดให้ข้อความอยู่ตรงกลางแนวนอน */
+  }
+  
+  #fireworksCanvas {
+    display: none;
+    margin-top: auto;
+  }
+  .heart {
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 50px;
+    animation: pulse 1s ease infinite, 
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
